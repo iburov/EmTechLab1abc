@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "ServerError";
+    var ex = Server.GetLastError();
+}
+
+<h2>ServerError</h2>
+
+<p>URL: @ViewBag.CurrentUrl</p>
+<p>Error: @ex</p>
